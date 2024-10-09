@@ -23,7 +23,7 @@ def iterate(matrix, accuracy):
             minimum = temp
             pivot_row = i
     if minimum == MAXINT or matrix[pivot_row][pivot_column] == 0:
-        return "No solutions"
+        return "The method is not applicable!"
     for i in range(0, len(matrix)):
         if i != pivot_row:
             parameter = -matrix[i][pivot_column] / matrix[pivot_row][pivot_column]
